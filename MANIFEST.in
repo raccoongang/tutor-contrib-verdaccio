@@ -1,0 +1,2 @@
+recursive-include tutorverdaccio/patches *
+recursive-include tutorverdaccio/templates *

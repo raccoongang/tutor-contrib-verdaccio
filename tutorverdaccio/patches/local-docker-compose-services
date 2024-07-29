@@ -1,0 +1,9 @@
+verdaccio:
+  image: {{ VERDACCIO_DOCKER_IMAGE }}
+  network_mode: host
+  restart: unless-stopped
+  ports:
+    - "4873:4873"
+  volumes:
+    - ../../data/verdaccio:/verdaccio/storage/data:rw
+  profiles: ["donotstart", "local-npm-registry"]
