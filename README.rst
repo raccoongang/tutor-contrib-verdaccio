@@ -14,9 +14,15 @@ Installation
 Usage
 *****
 
+The plugin must be enabled before starting to build any images.
+
 .. code-block:: bash
 
     tutor plugins enable verdaccio
+    tutor local start -d verdaccio
+    tutor images build mfe
+    tutor images build openedx
+
 License
 *******
 
